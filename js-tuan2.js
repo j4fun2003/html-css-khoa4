@@ -20,11 +20,10 @@ function test() {
 test();
 console.log(a); // HungHVd
 
-// Tạo ra vùng nhớ heap cấp phát giá trị HungHVd
 // Khi hàm test được thực thi, khởi tạo vùng nhớ stack để cấp phát các giá trị
 // Cơ chế hosting trong javascript tự động hoisted biến local a lên trên đầu của hàm test(var a) lúc này console.log đầu sẽ không nhận được giá trị của biến a(undifined)
 // Sau đó a được gán giá trị (a = "HaoHVp") nên ở console.log số 2 trả về kết quả a là HaoHVp
-// Sau khi hàm test được thực thi, bộ nhớ stack giải phóng (biến a không còn mang giá trị của hàm) lúc này console.log cuối cùng mang giá trị của vùng nhớ heap 
+// Sau khi hàm test được thực thi, bộ nhớ stack giải phóng (biến a không còn mang giá trị cục bộ của hàm) lúc này console.log cuối cùng mang giá trị biến toàn cục
 
 
 // ex3
